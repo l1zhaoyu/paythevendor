@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Payment</h1>
+    hello, {{ name }}
+    <select name="paymentmethods">
+        <option disable selected>Payment Method</option>
+        {% for p in payment %}
+            <option>{{ p }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Pay">
+
+
+{% endblock %}
